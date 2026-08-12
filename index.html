@@ -1,28 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Test cours</title>
+
   <style>
-    html, body {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .info {
+      padding: 15px;
+      background: #f3f3f3;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .video {
+      margin-top: 30px;
     }
 
     iframe {
       width: 100%;
-      height: 100%;
+      aspect-ratio: 16 / 9;
       border: 0;
+      border-radius: 10px;
     }
   </style>
 </head>
 
 <body>
-  <iframe
-    src="https://www.youtube.com/embed/CIr2-ry_JV4"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+
+  <h1>📚 Cours du jour</h1>
+
+  <p>
+    Bienvenue dans ton espace de cours.
+    Lis les informations ci-dessous avant de commencer la vidéo.
+  </p>
+
+  <div class="info">
+    <strong>🎯 Objectif du cours</strong>
+    <p>
+      À la fin de cette leçon, tu devras être capable de comprendre
+      les notions principales présentées dans la vidéo.
+    </p>
+  </div>
+
+  <h2>📝 À retenir</h2>
+
+  <ul>
+    <li>Regarde attentivement toute la vidéo.</li>
+    <li>Note les notions importantes.</li>
+    <li>Un petit quiz sera disponible après le cours.</li>
+  </ul>
+
+  <h2>🎥 Le cours</h2>
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/CIr2-ry_JV4"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
 </body>
 </html>
