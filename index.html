@@ -4,57 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Test cours</title>
+  <title>Cours vidéo</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 700px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 30px 20px;
+      padding: 20px;
       line-height: 1.6;
     }
 
     h1 {
-      margin-bottom: 10px;
+      text-align: center;
     }
 
-    .info {
-      padding: 15px;
-      background: #f3f3f3;
-      border-radius: 10px;
-      margin: 20px 0;
+    .video-container {
+      margin: 30px 0;
     }
 
     .video {
-      margin-top: 30px;
-    }
-
-    iframe {
+      position: relative;
       width: 100%;
       aspect-ratio: 16 / 9;
+      margin-top: 15px;
+    }
+
+    .video iframe {
+      width: 100%;
+      height: 100%;
       border: 0;
       border-radius: 10px;
+    }
+
+    .separator {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 40px 0;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>📚 Cours du jour</h1>
-
-  <p>
-    Bienvenue dans ton espace de cours.
-    Lis les informations ci-dessous avant de commencer la vidéo.
-  </p>
-
-  <div class="info">
-    <strong>🎯 Objectif du cours</strong>
-    <p>
-      À la fin de cette leçon, tu devras être capable de comprendre
-      les notions principales présentées dans la vidéo.
-    </p>
-  </div>
+  <h1>📚 Cours</h1>
 
   <h2>📝 À retenir</h2>
 
@@ -66,12 +59,62 @@
 
   <h2>🎥 Le cours</h2>
 
-  <div class="video">
-    <iframe
-  src="https://www.youtube-nocookie.com/embed/CIr2-ry_JV4"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+  <!-- Vidéo 1 -->
+  <div class="video-container">
+    <h3>Vidéo 1</h3>
+
+    <div class="video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/CIr2-ry_JV4"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <hr class="separator">
+
+  <!-- Vidéo 2 -->
+  <div class="video-container">
+    <h3>Vidéo 2</h3>
+
+    <div class="video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/-QWYFtB63O8"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <hr class="separator">
+
+  <!-- Vidéo 3 -->
+  <div class="video-container">
+    <h3>Vidéo 3</h3>
+
+    <div class="video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/sEumfryKE1Q"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <hr class="separator">
+
+  <!-- Vidéo 4 -->
+  <div class="video-container">
+    <h3>Vidéo 4 — à partir de 9 min 27</h3>
+
+    <div class="video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/F8sN7ijzozU?start=567"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 
 </body>
